@@ -13,10 +13,13 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Showcase your projects with a hero image (16 x 9)
+            작고 소중한 나의 경험들
           </p>
         </div>
         <div className="container py-12">
+          <h3 className="mb-4 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
+            Wanted PreOnboarding
+          </h3>
           <div className="-m-4 flex flex-wrap">
             {projectsData.map((d) => (
               <Card
@@ -29,6 +32,19 @@ export default function Projects() {
             ))}
           </div>
         </div>
+        {/* <div className="container py-12">
+          <div className="-m-4 flex flex-wrap">
+            {projectsData.map((d) => (
+              <Card
+                key={d.title}
+                title={d.title}
+                description={d.description}
+                imgSrc={d.imgSrc}
+                href={d.href}
+              />
+            ))}
+          </div>
+        </div> */}
       </div>
     </>
   )

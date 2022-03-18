@@ -1,16 +1,18 @@
 ---
-name: Tails Azimuth
+name: 김선명
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
+occupation: 플러터
+company: Hyosung Highschool
+email: vividxxxxx@gmail.com
 linkedin: https://www.linkedin.com
-github: https://github.com
+github: https://github.com/BGM-109
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+안녕하세요 플론트엔드 Flutter + React 개발자 입니다.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+좋은 하루 되시기 바랍니다.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+## 비전공자
+
+- 기계공학과 출신입니다
+- 개발 시작 전에는 전공과 상관없이 쇼핑몰 운영을 하였습니다.
