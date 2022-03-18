@@ -13,7 +13,7 @@ const projectsData = [
   },
   {
     title: 'Ncnc 기업과제',
-    description: `실제 서비스되고 있는 웹앱을 클론해보세요.`,
+    description: `Nextjs와 Typescript를 사용하여, 실제 서비스되고 있는 웹앱을 클론해보세요.`,
     imgSrc: '/static/images/ncnc.jpg',
     href: 'https://github.com/pre-onboarding-course-team-6/3rd-week-ncnc',
   },
