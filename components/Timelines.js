@@ -6,9 +6,9 @@ import { SiTensorflow } from 'react-icons/si'
 
 export default function Timeline() {
   return (
-    <div className="mt-8 bg-white">
-      <h1 className="text-center text-2xl font-bold">개발 교육</h1>
-      <VerticalTimeline className="before:bg-black">
+    <div className="mt-8 bg-white dark:bg-gray-900">
+      <h1 className="mb-5 text-center text-2xl font-bold">개발 교육</h1>
+      <VerticalTimeline className="">
         <VerticalTimelineElement
           className=""
           contentStyle={{ borderTop: '4px solid #035697' }}

@@ -3,6 +3,7 @@ import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Timeline from '@/components/Timelines'
+import Image from '@/components/Image'
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -15,31 +16,45 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="mt-8 divide-y divide-gray-200 dark:divide-gray-700 md:mt-16">
-        <div className="mb-10 ">
-          <p className="mb-4 bg-gradient-to-r from-yellow-600 to-red-600 bg-clip-text text-3xl font-extrabold leading-[60px] tracking-tight text-transparent dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600 md:text-5xl md:leading-[86px]">
-            접속해주셔서 감사합니다. <sapn className="text-white">👋</sapn>
-          </p>
-          <div className="space-y-3 text-lg leading-8 text-gray-600 dark:text-gray-400">
-            <p>Flutter Developer 입니다</p>
-            <div className="flex flex-col">
-              <Link href="/projects">
-                <a className="underline">🚆경험한것</a>
-              </Link>
-              <Link href="/blog">
-                <a className="underline">📋쓰는것</a>
-              </Link>
-              <Link href="/about">
-                <a className="underline">🌝소개</a>
-              </Link>
-              <Link href="#">
-                <a className="underline">📑이력서</a>
-              </Link>
-              <Link href="https://programing-log.tistory.com/">
-                <a className="underline">티스토리</a>
-              </Link>
+        <div className="mb-10 xl:grid xl:grid-cols-3">
+          <div className="pr-8 xl:col-span-2">
+            <p className="mb-4 bg-gradient-to-r from-yellow-600 to-red-600 bg-clip-text text-3xl font-extrabold leading-[60px] tracking-tight text-transparent dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600 md:text-5xl md:leading-[86px]">
+              접속해주셔서 감사합니다. <sapn className="text-white">👋</sapn>
+            </p>
+            <div className="space-y-3 text-lg leading-8 text-gray-600 dark:text-gray-400">
+              <p>Flutter Developer 입니다</p>
+              <div className="flex flex-col">
+                <Link href="/projects">
+                  <a className="underline">🚆경험한것</a>
+                </Link>
+                <Link href="/blog">
+                  <a className="underline">📋쓰는것</a>
+                </Link>
+                <Link href="/about">
+                  <a className="underline">🌝소개</a>
+                </Link>
+                <Link href="#">
+                  <a className="underline">📑이력서</a>
+                </Link>
+                <Link href="https://programing-log.tistory.com/">
+                  <a className="underline">티스토리</a>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="hidden scale-100 rounded-xl bg-gradient-to-r from-yellow-600 to-red-600 p-1 transition-all duration-200 ease-out xl:block xl:hover:scale-[1.15]">
+            <div className="w-full rounded-xl bg-white text-center">
+              <Image
+                src={siteMetadata.image}
+                alt="avatar"
+                width="192px"
+                height="384px"
+                className=""
+              />
             </div>
           </div>
         </div>
+
         {/* <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest
