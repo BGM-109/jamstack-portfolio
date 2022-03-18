@@ -6,6 +6,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
+import Timeline from '@/components/Timelines'
 
 const MAX_DISPLAY = 5
 
@@ -53,6 +54,9 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div> */}
+        <div>
+          <Timeline />
+        </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {

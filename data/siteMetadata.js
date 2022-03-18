@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Sunmkim portfolio',
+  title: '어쩔플러터',
   author: 'Sunmkim',
   headerTitle: '@BGM-109',
   description: '안녕하세요!',
