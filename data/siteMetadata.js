@@ -16,6 +16,7 @@ const siteMetadata = {
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
+  wanted: 'https://www.wanted.co.kr/',
   locale: 'ko-kr',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

@@ -1,17 +1,12 @@
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Timeline from '@/components/Timelines'
 import Image from '@/components/Image'
+import Typewriter from 'typewriter-effect'
+import NewsletterForm from '@/components/NewsletterForm'
 
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
-
-  return { props: { posts } }
-}
-
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -22,28 +17,36 @@ export default function Home({ posts }) {
               접속해주셔서 감사합니다. <sapn className="text-white">👋</sapn>
             </p>
             <div className="space-y-3 text-lg leading-8 text-gray-600 dark:text-gray-400">
-              <p>Flutter Developer 입니다</p>
+              <Typewriter
+                options={{
+                  strings: [
+                    'Flutter Developer 입니다.',
+                    '첫번째 프로그래밍언어는 파이썬입니다.',
+                    '운동을 좋아합니다.',
+                    '서울에 살고있습니다.',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
               <div className="flex flex-col">
                 <Link href="/projects">
-                  <a className="underline">🚆경험한것</a>
-                </Link>
-                <Link href="/blog">
-                  <a className="underline">📋쓰는것</a>
-                </Link>
-                <Link href="/about">
-                  <a className="underline">🌝소개</a>
-                </Link>
-                <Link href="#">
-                  <a className="underline">📑이력서</a>
+                  <a className="hover:underline">🚆경험한것</a>
                 </Link>
                 <Link href="https://programing-log.tistory.com/">
-                  <a className="underline">티스토리</a>
+                  <a className="hover:underline">📋쓰는것</a>
+                </Link>
+                <Link href="/about">
+                  <a className="hover:underline">🌝소개</a>
+                </Link>
+                <Link href="#">
+                  <a className="hover:underline">📑이력서</a>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="hidden scale-100 rounded-xl bg-gradient-to-r from-yellow-600 to-red-600 p-1 transition-all duration-200 ease-out xl:block xl:hover:scale-[1.15]">
-            <div className="w-full rounded-xl bg-white text-center">
+          <div className="hidden scale-100 transition-all duration-200 ease-out xl:block xl:hover:scale-[1.15] ">
+            <div className="flex flex-col overflow-hidden rounded-xl shadow-lg">
               <Image
                 src={siteMetadata.image}
                 alt="avatar"
@@ -51,6 +54,7 @@ export default function Home({ posts }) {
                 height="384px"
                 className=""
               />
+              <span className="h-1.5 bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600"></span>
             </div>
           </div>
         </div>
@@ -66,6 +70,7 @@ export default function Home({ posts }) {
         <div>
           <Timeline />
         </div>
+
         {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
