@@ -1,5 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import projectsData from '@/data/projectsData'
+import othersData from '@/data/sideProjectData'
 import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
 
@@ -18,7 +19,7 @@ export default function Projects() {
         </div>
         <div className="container py-12">
           <h3 className="mb-4 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
-            Wanted PreOnboarding
+            원티드 프리온보딩
           </h3>
           <div className="-m-4 flex flex-wrap">
             {projectsData.map((d) => (
@@ -32,9 +33,12 @@ export default function Projects() {
             ))}
           </div>
         </div>
-        {/* <div className="container py-12">
+        <div className="container py-12">
+          <h3 className="mb-4 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
+            기타
+          </h3>
           <div className="-m-4 flex flex-wrap">
-            {projectsData.map((d) => (
+            {othersData.map((d) => (
               <Card
                 key={d.title}
                 title={d.title}
@@ -44,7 +48,7 @@ export default function Projects() {
               />
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   )

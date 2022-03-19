@@ -1,21 +1,22 @@
 const sideProject = [
   {
-    title: 'Swit 기업과제',
-    description: `state를 잘 관리하는 법은 무엇입니까? 리덕스를 사용한 채팅앱을 만들면서 리덕스에 대해 조금 이해할 수 있었습니다.`,
-    imgSrc: '/static/images/swit.jpg',
-    href: 'https://github.com/pre-onboarding-course-team-6/2nd-week-swit',
+    title: 'Flutter 기반 멀티플랫폼 앱 개발자 데뷔 과정',
+    description: `Flutter를 통해 모바일 앱 개발에 대해 이해하고 앱 개발자로 취업하는 것을 목표 UI, Restapi, CleanAppArchitecture, FunctionalProgramming, StateManagement, Firebase`,
+    imgSrc: '/static/images/ssac.jpg',
+    href: 'https://www.notion.so/Flutter-b5da2a65e70044dba30b77039fb2251f',
   },
   {
-    title: 'EnergyBalace 기업과제',
-    description: `프론트엔드 디자이너로서 클라이언트에게 어떻게 정보를 제공하는게 가장 효율적일지 생각해보고 로직으로 구현해보세요.`,
-    imgSrc: '/static/images/energybalance.jpg',
-    href: 'https://github.com/pre-onboarding-course-team-6/3rd-week-energybalance',
+    title: 'Web Scrapy',
+    description: `데이터 분석 및 활용을 위해서 웹 데이터를 수집합니다. scrapy, scrapy-playwright, request-html, scrapey-selenium, selenium, using hidden-api`,
+    imgSrc: '/static/images/scrapy.png',
+    href: '',
   },
   {
-    title: 'Ncnc 기업과제',
-    description: `Nextjs와 Typescript를 사용하여, 실제 서비스되고 있는 웹앱을 클론해보세요.`,
-    imgSrc: '/static/images/ncnc.jpg',
-    href: 'https://github.com/pre-onboarding-course-team-6/3rd-week-ncnc',
+    title: 'TensorFlow Developer Certificate',
+    description: `이 인증 시험은 개발자의 텐서플로우 기초지식을 테스트 합니다. 해당 프로그램에는 컴퓨터 비전, 컨볼루션뉴럴네트워크, 자연어처리, 실제이미지데이터 및 전략을 사용한 Tensor Model 구축에 대한 이해가 필요합니다. `,
+    imgSrc:
+      'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/34788627',
+    href: '',
   },
 ]
 

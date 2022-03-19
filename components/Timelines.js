@@ -55,7 +55,9 @@ export default function Timeline() {
         >
           <h3 className="vertical-timeline-element-title">SSAC 크로스 플랫폼 개발자 부트캠프</h3>
           <h4 className="vertical-timeline-element-subtitle">Dart/Flutter</h4>
-          <p>User Experience, Visual Design</p>
+          <p className="whitespace-pre-line">
+            UI, Restapi, CleanAppArchitecture, FunctionalProgramming, StateManagement, Firebase
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ borderTop: '4px solid #5ED3F3' }}
