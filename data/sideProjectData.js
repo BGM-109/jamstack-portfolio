@@ -7,7 +7,7 @@ const sideProject = [
   },
   {
     title: 'Web Scrapy',
-    description: `데이터 분석 및 활용을 위해서 웹 데이터를 수집합니다. scrapy, scrapy-playwright, request-html, scrapey-selenium, selenium, using hidden-api`,
+    description: `데이터 분석 및 활용을 위해서 웹 데이터를 수집합니다. scrapy, scrapy-playwright, request-html, scrapy-selenium, selenium, using hidden-api`,
     imgSrc: '/static/images/scrapy.png',
     href: '',
   },

@@ -19,7 +19,7 @@ export default function Timeline() {
         >
           <h3 className="font-extrabold">42서울 라피신</h3>
           <h4 className="vertical-timeline-element-subtitle">C/Linux</h4>
-          <p>42서울 이노베이션 센터</p>
+          <p>C, Pointer, Linux, Git, Computer Science, Algorithms, Sorting</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ borderTop: '4px solid #FF8400' }}
@@ -31,7 +31,10 @@ export default function Timeline() {
         >
           <h3 className="vertical-timeline-element-title">멋쟁이사자 인공지능 부트캠프</h3>
           <h4 className="vertical-timeline-element-subtitle">Python/Tensorflow</h4>
-          <p>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</p>
+          <p>
+            Pandas, Numpy, Tensor basic, Linear Regression, Keras, Gradient Descent, Deep Learning,
+            Dense Layer, Convolutional Neural Networks{' '}
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ borderTop: '4px solid #366C9C' }}
@@ -43,7 +46,7 @@ export default function Timeline() {
         >
           <h3 className="vertical-timeline-element-title">프로그래머스 알고리즘</h3>
           <h4 className="vertical-timeline-element-subtitle">Python</h4>
-          <p>User Experience, Visual Design</p>
+          <p>Queue, Heap, Stack, Hash, Searching, Sorting, Dynamic Programming, DFS, BFS</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ borderTop: '4px solid #66B1F1' }}
@@ -69,7 +72,10 @@ export default function Timeline() {
         >
           <h3 className="vertical-timeline-element-title">원티드 프론트엔드 프리온보딩</h3>
           <h4 className="vertical-timeline-element-subtitle">React</h4>
-          <p>User Experience, Visual Design</p>
+          <p>
+            React, Component, Hooks, Typescript, Redux, Nextjs, CoreJavascript, Promise,
+            Async/Await, Hoisting, this, StyledComponent
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ borderTop: '4px solid #D2E4B3' }}
@@ -81,7 +87,7 @@ export default function Timeline() {
         >
           <h3 className="vertical-timeline-element-title">프로그래머스 노드 백엔드 스터디</h3>
           <h4 className="vertical-timeline-element-subtitle">Nodejs/Typescript</h4>
-          <p>User Experience, Visual Design</p>
+          <p>TypeScript, Database, Nextjs, Expressjs, Authentication, CRUD api, Vercel</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
